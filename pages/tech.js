@@ -58,8 +58,17 @@ export default () => {
         <a href="https://github.com/infinitered/thesis-phoenix">Thesis</a>. It's
         really slick, although not a lot of people know about it.
       </p>
-
-      <YouTube videoId="DOgT_K5tLxU" />
+      <div className="resp-container">
+        <iframe
+          className="resp-iframe"
+          width="640"
+          height="360"
+          src="https://www.youtube.com/embed/DOgT_K5tLxU"
+          frameBorder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
+      </div>
 
       <h3>Next.js, Now.sh</h3>
 
@@ -77,6 +86,21 @@ export default () => {
         basically no problems at all.
       </p>
       <TweetEmbed id="1065447628966514688" />
+      <style jsx>{`
+        .resp-container {
+          position: relative !important;
+          overflow: hidden;
+          padding-top: 56.25%;
+        }
+        .resp-iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          border: 0;
+        }
+      `}</style>
     </Page>
   );
 };

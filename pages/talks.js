@@ -42,8 +42,18 @@ export default () => {
         <li>
           In September, I spoke at{" "}
           <a href="https://reactlive.nl/">React Live Amsterdam!</a> It was
-          great! Here's the video: <br />
-          <YouTube videoId="Pb8MWkQ9GOc" />
+          great! Here's the video:
+          <div className="resp-container">
+            <iframe
+              className="resp-iframe"
+              width="640"
+              height="360"
+              src="https://www.youtube.com/embed/Pb8MWkQ9GOc"
+              frameBorder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
           <br />
           <TweetEmbed id="1179755402516422659" />
         </li>
@@ -51,8 +61,17 @@ export default () => {
           On the same trip and before React Live Amsterdam, I gave a talk at{" "}
           <a href="https://react-native.eu/">React Native EU</a> in September.
           Check it out! <br />
-          <YouTube videoId="qzkDssF8y9k" />
-          <br />
+          <div className="resp-container">
+            <iframe
+              className="resp-iframe"
+              width="640"
+              height="360"
+              src="https://www.youtube.com/embed/qzkDssF8y9k"
+              frameBorder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
           <TweetEmbed id="1181638898272747521" />
         </li>
         <li>
@@ -83,8 +102,17 @@ export default () => {
           July, 2019! It was an amazing conference all around. Here's the video
           of my panel appearance.
           <br />
-          <YouTube videoId="Jm19JlVukak" />
-          <br />
+          <div className="resp-container">
+            <iframe
+              className="resp-iframe"
+              width="640"
+              height="360"
+              src="https://www.youtube.com/embed/Jm19JlVukak"
+              frameBorder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
           <TweetEmbed id="1149780351633391618" />
         </li>
         <li>
@@ -99,8 +127,17 @@ export default () => {
           I spoke at <a href="https://react-finland.fi">React Finland 2019</a>!
           You can see the video here:
           <br />
-          <YouTube videoId="gTG8_9Zv0YI" />
-          <br />
+          <div className="resp-container">
+            <iframe
+              className="resp-iframe"
+              width="640"
+              height="360"
+              src="https://www.youtube.com/embed/gTG8_9Zv0YI"
+              frameBorder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
           My slides are here:{" "}
           <a href="/static/downloads/ReactFinland-Jamon-Holmgren-Slides.pdf">
             ReactFinland-Jamon-Holmgren-Slides.pdf
@@ -137,7 +174,17 @@ export default () => {
           </a>
           , ! I spoke about Modern JavaScript.
           <br />
-          <YouTube videoId="wXvXcrjgiXw" />
+          <div className="resp-container">
+            <iframe
+              width="640"
+              className="resp-iframe"
+              height="360"
+              src="https://www.youtube.com/embed/wXvXcrjgiXw"
+              frameBorder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
         </li>
         <li>
           I spoke at the{" "}
@@ -186,7 +233,17 @@ export default () => {
           2017 - Bellevue, Washington - I gave a lightning talk titled "Demoing
           Thesis - a Phoenix CMS".
           <br />
-          <YouTube videoId="DOgT_K5tLxU" />
+          <div className="resp-container">
+            <iframe
+              className="resp-iframe"
+              width="640"
+              height="360"
+              src="https://www.youtube.com/embed/DOgT_K5tLxU"
+              frameBorder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
         </li>
         <li>
           <a href="https://www.meetup.com/Portland-Functional-Programming-Study-Group/events/241862154">
@@ -238,6 +295,21 @@ export default () => {
           <a href="https://remote.works/episode/2/transcript">transcript</a>.
         </li>
       </ul>
+      <style jsx>{`
+        .resp-container {
+          position: relative !important;
+          overflow: hidden;
+          padding-top: 56.25%;
+        }
+        .resp-iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          border: 0;
+        }
+      `}</style>
     </Page>
   );
 };

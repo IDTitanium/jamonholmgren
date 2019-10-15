@@ -13,11 +13,7 @@ export default () => {
             <span className="title">Jamon Holmgren</span>
           </a>
         </Link>
-        <a
-          href="javascript:void(0);"
-          id="menu-toggle"
-          onClick={() => setMenuOpen(!menuOpen)}
-        >
+        <a id="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
           MENU
         </a>
         <div id="nav" className={menuOpen ? "menu-open" : "menu-closed"}>
