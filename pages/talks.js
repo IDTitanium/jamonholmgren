@@ -1,8 +1,8 @@
 import React from "react";
 // import Link from "next/link";
 import Page from "../components/page";
-import YouTube from "react-youtube";
 import TweetEmbed from "react-tweet-embed";
+import YoutubeEmbed from "../components/youtube-embed";
 
 export default () => {
   return (
@@ -44,18 +44,8 @@ export default () => {
             In September, I spoke at{" "}
             <a href="https://reactlive.nl/">React Live Amsterdam!</a> It was
             great! Here's the video:
-            <div className="resp-container">
-              <iframe
-                className="resp-iframe"
-                width="640"
-                height="360"
-                src="https://www.youtube.com/embed/Pb8MWkQ9GOc"
-                frameBorder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
-            </div>
           </p>
+          <YoutubeEmbed src="https://www.youtube.com/embed/Pb8MWkQ9GOc" />
           <br />
           <TweetEmbed id="1179755402516422659" />
         </li>
@@ -63,19 +53,9 @@ export default () => {
           <p>
             On the same trip and before React Live Amsterdam, I gave a talk at{" "}
             <a href="https://react-native.eu/">React Native EU</a> in September.
-            Check it out! <br />
-            <div className="resp-container">
-              <iframe
-                className="resp-iframe"
-                width="640"
-                height="360"
-                src="https://www.youtube.com/embed/qzkDssF8y9k"
-                frameBorder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
-            </div>{" "}
+            Check it out! <br />{" "}
           </p>
+          <YoutubeEmbed src="https://www.youtube.com/embed/qzkDssF8y9k" />
           <TweetEmbed id="1181638898272747521" />
         </li>
         <li>
@@ -112,17 +92,7 @@ export default () => {
             video of my panel appearance.
           </p>
           <br />
-          <div className="resp-container">
-            <iframe
-              className="resp-iframe"
-              width="640"
-              height="360"
-              src="https://www.youtube.com/embed/Jm19JlVukak"
-              frameBorder="0"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
-          </div>
+          <YoutubeEmbed src="https://www.youtube.com/embed/Jm19JlVukak" />
           <TweetEmbed id="1149780351633391618" />
         </li>
         <li>
@@ -141,17 +111,7 @@ export default () => {
             ! You can see the video here:
           </p>
           <br />
-          <div className="resp-container">
-            <iframe
-              className="resp-iframe"
-              width="640"
-              height="360"
-              src="https://www.youtube.com/embed/gTG8_9Zv0YI"
-              frameBorder="0"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
-          </div>
+          <YoutubeEmbed src="https://www.youtube.com/embed/gTG8_9Zv0YI" />
           My slides are here:{" "}
           <a href="/static/downloads/ReactFinland-Jamon-Holmgren-Slides.pdf">
             ReactFinland-Jamon-Holmgren-Slides.pdf
@@ -192,17 +152,7 @@ export default () => {
             , ! I spoke about Modern JavaScript.
           </p>
           <br />
-          <div className="resp-container">
-            <iframe
-              width="640"
-              className="resp-iframe"
-              height="360"
-              src="https://www.youtube.com/embed/wXvXcrjgiXw"
-              frameBorder="0"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
-          </div>
+          <YoutubeEmbed src="https://www.youtube.com/embed/wXvXcrjgiXw" />
         </li>
         <li>
           I spoke at the{" "}
@@ -253,17 +203,7 @@ export default () => {
             "Demoing Thesis - a Phoenix CMS".
           </p>
           <br />
-          <div className="resp-container">
-            <iframe
-              className="resp-iframe"
-              width="640"
-              height="360"
-              src="https://www.youtube.com/embed/DOgT_K5tLxU"
-              frameBorder="0"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
-          </div>
+          <YoutubeEmbed src="https://www.youtube.com/embed/DOgT_K5tLxU" />
         </li>
         <li>
           <a href="https://www.meetup.com/Portland-Functional-Programming-Study-Group/events/241862154">
@@ -316,19 +256,6 @@ export default () => {
         </li>
       </ul>
       <style jsx>{`
-        .resp-container {
-          position: relative !important;
-          overflow: hidden;
-          padding-top: 56.25%;
-        }
-        .resp-iframe {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          border: 0;
-        }
         li {
           margin-bottom: 2em;
         }

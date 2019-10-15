@@ -1,7 +1,7 @@
 import React from "react";
 import Page from "../components/page";
-import YouTube from "react-youtube";
 import TweetEmbed from "react-tweet-embed";
+import YoutubeEmbed from "../components/youtube-embed";
 
 export default () => {
   return (
@@ -58,18 +58,7 @@ export default () => {
         <a href="https://github.com/infinitered/thesis-phoenix">Thesis</a>. It's
         really slick, although not a lot of people know about it.
       </p>
-      <div className="resp-container">
-        <iframe
-          className="resp-iframe"
-          width="640"
-          height="360"
-          src="https://www.youtube.com/embed/DOgT_K5tLxU"
-          frameBorder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        ></iframe>
-      </div>
-
+      <YoutubeEmbed src="https://www.youtube.com/embed/DOgT_K5tLxU" />
       <h3>Next.js, Now.sh</h3>
 
       <p>
@@ -86,21 +75,6 @@ export default () => {
         basically no problems at all.
       </p>
       <TweetEmbed id="1065447628966514688" />
-      <style jsx>{`
-        .resp-container {
-          position: relative !important;
-          overflow: hidden;
-          padding-top: 56.25%;
-        }
-        .resp-iframe {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          border: 0;
-        }
-      `}</style>
     </Page>
   );
 };
