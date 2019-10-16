@@ -5,7 +5,7 @@ export default props => {
         className="resp-iframe"
         width="640"
         height="360"
-        src={props.src}
+        src={`https://www.youtube.com/embed/${props.id}`}
         frameBorder="0"
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen

@@ -2,7 +2,7 @@ import React from "react";
 // import Link from "next/link";
 import Page from "../components/page";
 import TweetEmbed from "react-tweet-embed";
-import YoutubeEmbed from "../components/youtube-embed";
+import YouTubeEmbed from "../components/youtube-embed";
 
 export default () => {
   return (
@@ -45,7 +45,7 @@ export default () => {
             <a href="https://reactlive.nl/">React Live Amsterdam!</a> It was
             great! Here's the video:
           </p>
-          <YoutubeEmbed src="https://www.youtube.com/embed/Pb8MWkQ9GOc" />
+          <YouTubeEmbed id="Pb8MWkQ9GOc" />
           <br />
           <TweetEmbed id="1179755402516422659" />
         </li>
@@ -55,7 +55,7 @@ export default () => {
             <a href="https://react-native.eu/">React Native EU</a> in September.
             Check it out! <br />{" "}
           </p>
-          <YoutubeEmbed src="https://www.youtube.com/embed/qzkDssF8y9k" />
+          <YouTubeEmbed id="qzkDssF8y9k" />
           <TweetEmbed id="1181638898272747521" />
         </li>
         <li>
@@ -92,7 +92,7 @@ export default () => {
             video of my panel appearance.
           </p>
           <br />
-          <YoutubeEmbed src="https://www.youtube.com/embed/Jm19JlVukak" />
+          <YouTubeEmbed id="Jm19JlVukak" />
           <TweetEmbed id="1149780351633391618" />
         </li>
         <li>
@@ -111,7 +111,7 @@ export default () => {
             ! You can see the video here:
           </p>
           <br />
-          <YoutubeEmbed src="https://www.youtube.com/embed/gTG8_9Zv0YI" />
+          <YouTubeEmbed id="gTG8_9Zv0YI" />
           My slides are here:{" "}
           <a href="/static/downloads/ReactFinland-Jamon-Holmgren-Slides.pdf">
             ReactFinland-Jamon-Holmgren-Slides.pdf
@@ -152,7 +152,7 @@ export default () => {
             , ! I spoke about Modern JavaScript.
           </p>
           <br />
-          <YoutubeEmbed src="https://www.youtube.com/embed/wXvXcrjgiXw" />
+          <YouTubeEmbed id="wXvXcrjgiXw" />
         </li>
         <li>
           I spoke at the{" "}
@@ -203,7 +203,7 @@ export default () => {
             "Demoing Thesis - a Phoenix CMS".
           </p>
           <br />
-          <YoutubeEmbed src="https://www.youtube.com/embed/DOgT_K5tLxU" />
+          <YouTubeEmbed id="DOgT_K5tLxU" />
         </li>
         <li>
           <a href="https://www.meetup.com/Portland-Functional-Programming-Study-Group/events/241862154">
